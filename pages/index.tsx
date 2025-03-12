@@ -10,15 +10,15 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
-	subsets: ['latin'] 
+	subsets: ['latin']
 });
 
 export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Мой Блог</title>
-				<meta name="description" content="Добро пожаловать в мой блог!" />
+				<title>OWL Top</title>
+				<meta name="description" content="Рейтинги" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
 			<div
