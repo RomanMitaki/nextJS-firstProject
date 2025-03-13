@@ -9,22 +9,28 @@
     "start": "next start",
     "lint": "next lint",
     "stylelint": "stylelint \"**/*.css\" --fix",
-    "prettier": "prettier --write \"**/*.{css,scss}\""
+    "prettier": "prettier --write \"**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts,vue,astro,css}\""
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "next": "15.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
     "stylelint": "^16.15.0",
+    "stylelint-config-recess-order": "^6.0.0",
     "stylelint-config-standard": "^37.0.0",
     "typescript": "^5"
   }
