@@ -26,15 +26,24 @@ export const getStaticPaths: GetStaticPaths = async () => {
 			firstCategory
 		}
 	);
+	// Формируем массив адресов
+	const paths = menu.flatMap((m) => m.pages.map((p) => '/courses/' + p.alias));
+
+	// Выводим адреса в консоль
+	console.log('Paths generated for getStaticPaths:', paths);
+
 	return {
-		paths: menu.flatMap((m) => m.pages.map((p) => '/courses/' + p.alias)),
-		fallback: true
+		paths, // Эти пути будут статически сгенерированы
+		fallback: true // Включаем fallback для обработки других путей
 	};
 };
 
 export const getStaticProps: GetStaticProps<CourseProps> = async ({
 	params
 }: GetStaticPropsContext<ParsedUrlQuery>) => {
+	// Логируем params в консоль
+	console.log('Params received in getStaticProps:', params);
+
 	if (!params) {
 		return {
 			notFound: true
