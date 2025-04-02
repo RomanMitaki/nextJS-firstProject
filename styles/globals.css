@@ -16,11 +16,16 @@ body {
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
 :root {
 	--black: #3b434e;
 	--white: #fff;
 	--primary: #7653fc;
 	--gray-light: #ebebeb;
+	--gray-dark: #787d85;
 	--primary-hover: #6344df;
 	--background-primary: #f5f6f8;
 	--red: #fc836d;
